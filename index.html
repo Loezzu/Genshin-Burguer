@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Hamburguer, Fast Food, Restaurante, Genshin Impact, Gamer">
+  <meta name="description" content="Site Responsivo sobre Genshin Impact e Hamburgueria, utilizando HMTL5, CSS3, JavasScript com validação de formulário, utilizando Bootstrap framework para Modal e Carousel">
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="img/icon.webp" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Genshin Burguer</title>
+</head>
+
+<body>
+  <header id="topo">
+    <img id="logo-nav" src="img/logo.png" alt="Genshin Impact">
+     <button id="btn-menu"><a href="#menu"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+    </button>
+    <nav id="menu">
+      <a href="#" id="btn-fechar">X</a>
+      <ul>
+        <a href="#topo">
+          <li>Home</li>
+        </a>
+        <a href="#cardapio">
+          <li>Cardápio</li>
+        </a>
+        <a href="#do-dia">
+          <li>Do dia</li>
+        </a>
+        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <li>Fale Conosco</li>
+        </a>
+      </ul>
+    </nav> 
+  </header>
+
+  <main id="corpo">
+    <section id="slide">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/carousel-image1.png" class="d-block w-100" alt="Albedo">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel-image2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel-image3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel-image4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <h4 id="texto-carousel">A melhor hamburgueria com a temática de <a target="_blank" href="https://genshin.mihoyo.com/pt/home">Genshin Impact.</a> </h4>
+    </section>
+
+    <section id="cardapio">
+      <div id="div-cardapio">
+        <h4 id="titulo-cardapio">Cardápio</h4>
+        <div id="hamburguer1">
+          <figure class="imagem-hamburguer" id="burguer1"></figure>
+          <div class="burg">
+            <h4 class="titulo-hamburguer">Viajante Burguer</h4>
+            <p class="descricao-hamburguer">Pão australiano, Hamburguer artesanal, Maionese caseira, Picles, Alface,
+              Tomate, Batata frita.</p>
+          </div>
+        </div>
+
+        <div id="hamburguer2">
+          <figure class="imagem-hamburguer" id="burguer2"></figure>
+          <div class="burg">
+            <h4 class="titulo-hamburguer">Amber Burguer</h4>
+            <p class="descricao-hamburguer">Pão tradicional, Hamburguer artesanal, Beacon, Mussarela, Maionese caseira, Tomate, Batata frita.</p>
+          </div>
+        </div>
+
+        <div id="hamburguer3">
+          <figure class="imagem-hamburguer" id="burguer3"></figure>
+          <div class="burg">
+            <h4 class="titulo-hamburguer">Diluc Burguer</h4>
+            <p class="descricao-hamburguer">Pão tradicional, Hamburguer grelhado, Beacon, Cheddar, Maionese caseira, Alface, Tomate.</p>
+          </div>
+        </div>
+
+        <div id="hamburguer4">
+          <figure class="imagem-hamburguer" id="burguer4"></figure>
+          <div class="burg">
+            <h4 class="titulo-hamburguer">Razor Burguer</h4>
+            <p class="descricao-hamburguer">Pão com Gergelim, 2 Hamburguer grelhado, Cheddar, Maionese caseira, Picles, Alface, Tomate, Cebola roxa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="do-dia">
+      <div id="burg-do-dia">
+        <h4 id="titulo-burg-do-dia">Hamburgueres do dia</h4>
+        <div id="titulo-do-dia">
+          <div id="do-dia1">
+            <h4 class="titulo-hamburguer2">Segunda</h4>
+            <figure class="imagem-hamburguer-do-dia" id="burguer1-do-dia"></figure>
+            <h4 class="titulo2-hamburguer">Vent Burguer</h4>
+            <p class="descricao2-hamburguer">Hamburguer de picanha (300g) recheado, com maionese fifties, molho de tomate, queijo e majericão.</p>
+          </div>
+
+          <div id="do-dia2">
+            <h4 class="titulo-hamburguer2">Quarta</h4>
+            <figure class="imagem-hamburguer-do-dia" id="burguer2-do-dia"></figure>
+            <h4 class="titulo2-hamburguer">Zhongli Burguer</h4>
+            <p class="descricao2-hamburguer">Pão duplo, Aneis de cebola, queijo cheddar cremoso e bacon no pão preto, carne (300g).</p>
+          </div>
+
+          <div id="do-dia3">
+            <h4 class="titulo-hamburguer2">Sexta</h4>
+            <figure class="imagem-hamburguer-do-dia" id="burguer3-do-dia"></figure>
+            <h4 class="titulo2-hamburguer">Bennett Burguer</h4>
+            <p class="descricao2-hamburguer">Hamburguer de picanha (180g), Muçarela, gorgonzola, catupiry, parmesão, tomate e maionese, fifties no pão brioche.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fale-conosco">
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Fale Conosco</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="" method="post">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ex: José da Silva">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="ex: jose@gmail.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Deixe aqui sua mensagem para nós!" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button onclick="validar()" type="reset"  class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer id="rodape">
+    <h4 id="titulo-rodape">Devs Chefs</h4>
+    <div id="div-dev1">
+      <div id="div-imagem">
+        <figure id="luiz"></figure>
+      </div>
+      <h5 id="dev-nome">Luiz Souza</h5>
+      <div id="div-redes-sociais">
+        <a target="blank" href="https://twitter.com/loezum">
+          <figure id="twitter"></figure>
+        </a>
+        <a target="blank" href="https://www.instagram.com/loezum">
+          <figure id="instagram"></figure>
+        </a>
+        <a target="blank" href="https://github.com/Loezzu">
+          <figure id="github"></figure>
+        </a>
+      </div>
+    </div>
+
+    <div id="div-dev2">
+      <div id="div-imagem">
+        <figure id="rafael"></figure>
+      </div>
+      <h5 id="dev-nome">Rafael Santini</h5>
+      <div id="div-redes-sociais">
+        <a target="blank" href="https://twitter.com/pingazull">
+          <figure id="twitter"></figure>
+        </a>
+        <a target="blank" href="https://www.instagram.com/rafagod2/">
+          <figure id="instagram"></figure>
+        </a>
+        <a target="blank" href="https://github.com/RafaelSantini23">
+          <figure id="github"></figure>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/funcoes.js"></script>
+
+</body>
+
+</html>

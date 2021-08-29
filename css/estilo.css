@@ -1,0 +1,635 @@
+@charset 'utf-8';
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background-image: url(../img/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#topo{
+  width: 100%;
+  height: 90px;
+  background-image: url(../img/banner1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+
+
+#logo-nav{
+  width: 200px;
+  margin: 5px;
+  float: left;
+}
+
+#btn-menu{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 5px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  color: white;
+
+}
+
+#btn-menu a{
+  color: white;
+}
+
+
+
+#menu{
+  float: left;
+  width: 100%;
+  height: 0%;
+  background-color: rgb(31, 33, 43);
+  position: fixed;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+#menu:target{
+  height: 100%;
+  
+}
+
+#btn-fechar{
+  float: right;
+  padding: 30px;
+  margin-top: -7px;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+#menu ul{
+  width: 100%;
+  height: 100%;
+  clear: both;
+  margin-top: 30%;
+  text-align: center;
+  
+  
+}
+
+#menu ul a{
+  text-decoration: none;
+}
+
+
+#menu ul li{
+  padding: 7%;
+  color: white;
+  font-size: 2em;
+  text-shadow: 0px 0px 5px black;
+}
+
+#menu ul li:hover{
+  background-color: rgba(255, 255, 255, 0.205);
+}
+
+#corpo{
+  float: left;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+#slide{
+  margin-top: 20px;
+  float: left;
+  z-index: 1;
+  min-width: 100%;
+}
+
+#carouselExampleIndicators{
+  max-width: 95%;
+  max-height: 95%;
+  margin: auto;
+  z-index: 0;
+}
+
+
+#texto-carousel{
+  margin-top: 50px !important;
+  margin: 10px;
+  padding: 5px;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 5px black;
+
+}
+
+#texto-carousel a{
+  color: lightskyblue;
+}
+
+#cardapio{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 40px;
+  float: left;
+}
+
+#div-cardapio{
+  width: 320px;
+  height: 1780px;
+  background-color: rgba(31,33,43, 0.5);
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#titulo-cardapio{
+  text-align: center;
+  margin: 20px;
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 8px black;
+}
+
+#hamburguer1, #hamburguer2, #hamburguer3, #hamburguer4{
+  width: 250px;
+  height: 380px;
+  background-color: black;
+  border-radius: 2vmin;
+}
+
+#hamburguer1:hover, #hamburguer2:hover, #hamburguer3:hover, #hamburguer4:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#do-dia{
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  float: left;
+  margin-bottom: 100px;
+}
+
+#burg-do-dia{
+  width: 320px;
+  height: 1600px;
+  background-color: rgba(31,33,43, 0.5);
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#titulo-burg-do-dia{
+  text-align: center;
+  font-size: 1.7em;
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 8px black;
+}
+
+
+#do-dia1, #do-dia2, #do-dia3{
+  width: 250px;
+  height: 450px;
+  background-color: black;
+  border-radius: 2vmin;
+  margin-bottom: 35px;
+}
+
+#do-dia1:hover, #do-dia2:hover, #do-dia3:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.imagem-hamburguer-do-dia{
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  margin-top: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2vmin;
+}
+
+.titulo2-hamburguer {
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+  margin: 20px;
+}
+
+.titulo-hamburguer2 {
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+  padding-top: 20px;
+}
+
+#burguer1-do-dia{
+  background-image: url(../img/segunda.jpg);
+}
+
+#burguer2-do-dia{
+  background-image: url(../img/quarta.jpg);
+}
+
+#burguer3-do-dia{
+  background-image: url(../img/sexta.jpg);
+}
+
+
+
+#burguer1{
+  background-image: url(../img/burguer1.jpg);
+}
+
+#burguer2{
+  background-image: url(../img/burguer2.jpeg);
+}
+
+#burguer3{
+  background-image: url(../img/burguer3.webp);
+}
+
+#burguer4{
+  background-image: url(../img/burguer4.jpg);
+}
+
+.imagem-hamburguer{
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  margin-top: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.titulo-hamburguer{
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+  margin-top: 30px;
+}
+
+
+.descricao-hamburguer{
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.descricao2-hamburguer{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1em;
+  padding: 0 10px;
+}
+
+
+#rodape{
+  width: 100%;
+  height: 490px;
+  background-color: #1f212b;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+#titulo-rodape{
+  color: white;
+  font-size: 2em;
+  margin-top: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 8px black;
+}
+
+#div-dev1, #div-dev2{
+  width: 80%;
+  height: 190px;
+  display: flex;  
+  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#luiz, #rafael{
+  margin-top: 5px;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/luiz.jpg);
+  background-position: right top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+
+#rafael{
+  background-image: url(../img/rafael.jpg);
+}
+
+#dev-nome{
+  color: white;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px black;
+}
+
+#div-redes-sociais{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#twitter, #instagram, #github{
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/twitter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#instagram{
+  background-image: url(../img/instagram.png);
+}
+
+#github{
+  background-image: url(../img/github.png);
+}
+
+
+
+@media screen and (min-width:768px) {
+  #topo{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #logo-nav{
+    width: 290px;
+    margin: 0px;
+  }
+
+  #titulo{
+    color: white;
+    text-shadow:  0px 0px 10px #000;
+    font-size: 2.7em;
+    text-align: center;
+    float: left;
+  }
+
+  #btn-menu, #btn-fechar{
+    display: none;
+  }
+
+  button a{
+    color: black;
+  }
+
+  #menu{
+    width: 80%;
+    height: 50px;
+    background-color: rgba(31, 33, 43, 0.301);
+    position: relative;
+    border-radius: 10vmin; 
+  }
+
+  #menu:target{
+  height: 50px;
+  }
+  
+  #menu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0%;
+  }
+
+  #menu ul li{
+    padding: 0;
+  }
+
+  #menu ul li{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  #menu ul li:hover{
+    background-color: transparent;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+
+  }
+
+  #carouselExampleIndicators{
+    max-width: 60%;
+    max-height: 60%;
+    margin: auto;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+
+  #texto-carousel{
+  font-size: 3em;
+  text-shadow: 5px 5px 9px black;
+  }
+
+  #div-cardapio{
+    width: 80%;
+    height: 1150px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #titulo-cardapio{
+    text-align: center;
+    margin: 20px;
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+  }
+
+  #burg-do-dia{
+    width: 80%;
+    height: 650px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #div-cardapio-burg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #hamburguer1, #hamburguer2, #hamburguer3, #hamburguer4{
+    width: 80%;
+    height:200px;
+    background-color: black;
+    border-radius: 2vmin;
+    display:flex;
+  }
+
+  #titulo-do-dia {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .imagem-hamburguer{
+    width: 290px;
+    height: 150px;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2vmin;
+  }
+
+  .descricao-hamburguer{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 0px;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  .descricao2-hamburguer{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  .titulo2-hamburguer {
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    margin: 15px;
+  }
+
+  .burg {
+    width: 700px;
+  }
+
+  #titulo-burg-do-dia{
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    
+  }
+  #do-dia1, #do-dia2, #do-dia3{
+    width: 240px;
+    height: 490px;
+    background-color: black;
+    border-radius: 2vmin;
+  }
+
+  #rodape{
+    width: 100%;
+    height: 370px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30% 50%;
+    place-items: center;
+  }
+
+  #titulo-rodape{
+    margin-top: 0px;
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  
+  #div-dev1{
+    width: 90%;
+    height: 190px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-bottom: 30px;
+  }
+  
+  #div-dev2{
+    width: 90%;
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  #luiz, #rafael{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+  }
+
+  #carouselExampleIndicators{
+    max-width: 60%;
+    max-height: 60%;
+    margin: auto;
+  }
+
+
+  
+  
+}
+
+
